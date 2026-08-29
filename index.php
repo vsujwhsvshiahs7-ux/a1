@@ -64,7 +64,7 @@
         </div>
 
         <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-amber); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);">
-          <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&h=600&crop=faces&mechanic_slot=15" alt="MechanicTimeox Grade-5 Titanium Tourbillon Engine Movement" style="width: 100%; height: 500px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&w=800&h=600&crop=entropy&mechanic_slot=19" alt="MechanicTimeox Grade-5 Titanium Tourbillon Engine Movement" style="width: 100%; height: 500px; object-fit: cover;">
           <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1.5rem; background: linear-gradient(0deg, rgba(17,19,24,0.95) 0%, transparent 100%);">
             <span style="font-size: 0.75rem; color: var(--accent-amber); font-weight: 800; text-transform: uppercase;">Flagship Industrial Machine</span>
             <h3 style="color: var(--text-light); font-size: 1.3rem;">The Titan Chrono-Forge Monopusher</h3>
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div>
-          <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&h=600&crop=top&mechanic_slot=16" alt="MechanicTimeox Industrial CNC Lathe Watchmaking Workshop" style="border-radius: 12px; border: 1px solid var(--border-amber);">
+          <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?auto=format&fit=crop&w=800&h=600&crop=faces&mechanic_slot=20" alt="MechanicTimeox Industrial CNC Lathe Watchmaking Workshop" style="border-radius: 12px; border: 1px solid var(--border-amber);">
         </div>
       </div>
     </div>
@@ -112,7 +112,7 @@
         <!-- Machine 1 -->
         <div class="forge-card">
           <div class="forge-img-wrap">
-            <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=800&h=600&crop=center&mechanic_slot=17" alt="The Titan Chrono-Forge Monopusher">
+            <img src="https://images.unsplash.com/photo-1619252584172-a83a949b6efd?auto=format&fit=crop&w=800&h=600&crop=top&mechanic_slot=21" alt="The Titan Chrono-Forge Monopusher">
           </div>
           <div class="forge-body">
             <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">Grade-5 Titanium • Column Wheel</span>
@@ -130,7 +130,7 @@
         <!-- Machine 2 -->
         <div class="forge-card">
           <div class="forge-img-wrap">
-            <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?auto=format&fit=crop&w=800&h=600&crop=bottom&mechanic_slot=18" alt="The Tactical Stealth Automatic GMT">
+            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&h=600&crop=center&mechanic_slot=22" alt="The Tactical Stealth Automatic GMT">
           </div>
           <div class="forge-body">
             <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">DLC Diamond Coating • Dual Time Zone</span>
@@ -148,7 +148,7 @@
         <!-- Machine 3 -->
         <div class="forge-card">
           <div class="forge-img-wrap">
-            <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&w=800&h=600&crop=entropy&mechanic_slot=19" alt="The Openworked Skeleton Tourbillon Engine">
+            <img src="https://images.unsplash.com/photo-1609587312208-cea54be969e7?auto=format&fit=crop&w=800&h=600&crop=bottom&mechanic_slot=23" alt="The Openworked Skeleton Tourbillon Engine">
           </div>
           <div class="forge-body">
             <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">60-Sec Flying Tourbillon • Skeletonized</span>
@@ -207,13 +207,13 @@
 
       <div class="industrial-gallery">
         <div class="gallery-tile">
-          <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?auto=format&fit=crop&w=800&h=600&crop=faces&mechanic_slot=20" alt="Master Watchmaker Inspection under Loupe">
+          <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&h=600&crop=entropy&mechanic_slot=24" alt="Master Watchmaker Inspection under Loupe">
         </div>
         <div class="gallery-tile">
-          <img src="https://images.unsplash.com/photo-1619252584172-a83a949b6efd?auto=format&fit=crop&w=800&h=600&crop=top&mechanic_slot=21" alt="Mechanical Watch Movement Gear Assembly Bench">
+          <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&h=600&crop=faces&mechanic_slot=25" alt="Mechanical Watch Movement Gear Assembly Bench">
         </div>
         <div class="gallery-tile">
-          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&h=600&crop=center&mechanic_slot=22" alt="Mobile Watchmaker Van Workshop Experience">
+          <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=800&h=600&crop=top&mechanic_slot=26" alt="Mobile Watchmaker Van Workshop Experience">
         </div>
       </div>
     </div>
@@ -281,7 +281,7 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
         <div class="blog-card">
           <div class="blog-img-wrap">
-            <img src="https://images.unsplash.com/photo-1609587312208-cea54be969e7?auto=format&fit=crop&w=800&h=600&crop=bottom&mechanic_slot=23" alt="5-Axis CNC Milling of Grade-5 Titanium Tourbillon Cages">
+            <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?auto=format&fit=crop&w=800&h=600&crop=center&mechanic_slot=27" alt="5-Axis CNC Milling of Grade-5 Titanium Tourbillon Cages">
           </div>
           <div class="blog-body">
             <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">August 24, 2026 • 1,245 Words</span>
@@ -293,7 +293,7 @@
 
         <div class="blog-card">
           <div class="blog-img-wrap">
-            <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&h=600&crop=entropy&mechanic_slot=24" alt="DLC Plasma Vapor Deposition in Watch Cases">
+            <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&w=800&h=600&crop=bottom&mechanic_slot=28" alt="DLC Plasma Vapor Deposition in Watch Cases">
           </div>
           <div class="blog-body">
             <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">August 20, 2026 • 1,247 Words</span>
@@ -305,7 +305,7 @@
 
         <div class="blog-card">
           <div class="blog-img-wrap">
-            <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&h=600&crop=faces&mechanic_slot=25" alt="Column-Wheel Monopusher Chronograph Mechanics">
+            <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?auto=format&fit=crop&w=800&h=600&crop=entropy&mechanic_slot=29" alt="Column-Wheel Monopusher Chronograph Mechanics">
           </div>
           <div class="blog-body">
             <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">August 16, 2026 • 1,247 Words</span>

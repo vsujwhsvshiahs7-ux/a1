@@ -40,21 +40,39 @@
     </div>
   </header>
 
-  <!-- About Hero -->
-  <section class="forge-hero" style="padding-top: 9rem; background: radial-gradient(circle at 70% 30%, #0B1E28 0%, #111318 70%);">
-    <div class="container text-center">
-      <span class="hero-badge">⚙️ INDUSTRIAL MICRO-MECHANICS</span>
-      <h1 class="font-display" style="font-size: 3.5rem;">Titanium CNC Milling & Mobile Vans</h1>
-      <p style="max-width: 750px; margin: 1rem auto 0; color: var(--text-light); font-size: 1.15rem; line-height: 1.8;">
-        Stationed in Soho, Manhattan, MechanicTimeox was founded to advance high watchmaking into heavy industrial territory through 5-axis CNC titanium milling, DLC diamond coating, and mobile watchmaker workshop van visits.
-      </p>
+  <!-- About Hero with Prominent Image Showcase -->
+  <section class="forge-hero" style="padding-top: 9.5rem; background: radial-gradient(circle at 70% 30%, #0B1E28 0%, #111318 70%);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items: center;">
+        <div>
+          <span class="hero-badge">⚙️ INDUSTRIAL CHRONO-FORGE ATELIER</span>
+          <h1 class="font-display" style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.25rem;">
+            Titanium CNC Milling & <span class="gradient-amber">Mobile Watchmaker Labs</span>
+          </h1>
+          <p style="color: var(--text-light); font-size: 1.15rem; line-height: 1.8; margin-bottom: 2rem;">
+            Stationed in Soho, Manhattan, MechanicTimeox was founded to advance high watchmaking into heavy industrial territory through 5-axis CNC titanium milling, DLC diamond coating, and mobile watchmaker workshop van visits.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="contact.html" class="btn-forge btn-amber">Book Mobile Workshop</a>
+            <a href="blog.html" class="btn-forge btn-outline-amber">Read Technical Journal</a>
+          </div>
+        </div>
+
+        <div style="position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-amber); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);">
+          <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&w=800&h=600&crop=top&mechanic_slot=1" alt="MechanicTimeox Industrial Titanium Watchmaking Atelier" style="width: 100%; height: 440px; object-fit: cover;">
+          <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1.25rem; background: linear-gradient(0deg, rgba(17,19,24,0.95) 0%, transparent 100%);">
+            <span style="font-size: 0.75rem; color: var(--accent-amber); font-weight: 800; text-transform: uppercase;">Flagship Laboratory</span>
+            <h3 style="color: var(--text-light); font-size: 1.2rem;">Soho Micro-Machining Headquarters</h3>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Narrative Section -->
+  <!-- Narrative Section with Studio Workshop Image -->
   <section class="section">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3.5rem; align-items: center; margin-bottom: 4rem;">
         <div>
           <span class="section-subtitle">Industrial Micro-Engineering</span>
           <h2 style="font-size: 2.4rem; color: var(--text-light); margin-bottom: 1.25rem;">0.001mm Micro-Tolerances & DLC Coatings</h2>
@@ -64,43 +82,61 @@
           <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.8;">
             Every chronograph engine and skeleton tourbillon machine we forge features laser-poised balance wheels, Vickers 4,500 DLC coatings, and sapphire exhibition casebacks that deliver unyielding precision across extreme environments.
           </p>
+          <div style="padding: 1.25rem; background: var(--bg-card); border-left: 3px solid var(--accent-amber); border-radius: 4px;">
+            <p style="color: var(--accent-amber); font-family: var(--font-heading); font-size: 1.15rem; font-style: italic; margin: 0;">
+              "True chronometry is industrial truth—where 0.001mm micro-machining tolerances transform raw titanium billets into indestructible timepieces."
+            </p>
+          </div>
         </div>
         <div>
-          <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&w=800&h=600&crop=top&mechanic_slot=1" alt="MechanicTimeox Master Watchmaker CNC Workshop" style="border-radius: 12px; border: 1px solid var(--border-amber);">
+          <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?auto=format&fit=crop&w=800&h=600&crop=center&mechanic_slot=2" alt="MechanicTimeox Master Watchmaker CNC Workshop Bench" style="border-radius: 12px; border: 1px solid var(--border-amber); box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
         </div>
       </div>
 
-      <!-- Standards Grid -->
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem;">
-        <div style="background: var(--bg-surface); color: var(--text-light); padding: 1.75rem; border-radius: 12px; border: 1px solid var(--border-amber);">
-          <h3 style="color: var(--accent-amber); font-size: 1.2rem; margin-bottom: 0.5rem;">1. Titanium Micro-Milling</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">0.001mm tolerances carved directly from grade-5 titanium billets.</p>
+      <!-- Image Feature Cards Grid -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem;">
+        <div class="forge-card">
+          <div class="forge-img-wrap" style="height: 220px;">
+            <img src="https://images.unsplash.com/photo-1619252584172-a83a949b6efd?auto=format&fit=crop&w=800&h=600&crop=bottom&mechanic_slot=3" alt="5-Axis CNC Milling Lathe">
+          </div>
+          <div class="forge-body" style="padding: 1.5rem;">
+            <h3 style="color: var(--accent-amber); font-size: 1.2rem; margin-bottom: 0.5rem;">1. Titanium Micro-Milling</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">0.001mm tolerances carved directly from solid grade-5 titanium billets.</p>
+          </div>
         </div>
-        <div style="background: var(--bg-surface); color: var(--text-light); padding: 1.75rem; border-radius: 12px; border: 1px solid var(--border-amber);">
-          <h3 style="color: var(--accent-amber); font-size: 1.2rem; margin-bottom: 0.5rem;">2. DLC Diamond Coating</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">Vickers 4,500 plasma vapor deposition for extreme scratch resistance.</p>
+
+        <div class="forge-card">
+          <div class="forge-img-wrap" style="height: 220px;">
+            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&h=600&crop=entropy&mechanic_slot=4" alt="DLC Diamond Coating Chamber">
+          </div>
+          <div class="forge-body" style="padding: 1.5rem;">
+            <h3 style="color: var(--accent-amber); font-size: 1.2rem; margin-bottom: 0.5rem;">2. DLC Diamond Coating</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Vickers 4,500 plasma vapor deposition for extreme scratch resistance.</p>
+          </div>
         </div>
-        <div style="background: var(--bg-surface); color: var(--text-light); padding: 1.75rem; border-radius: 12px; border: 1px solid var(--border-amber);">
-          <h3 style="color: var(--accent-amber); font-size: 1.2rem; margin-bottom: 0.5rem;">3. Monopusher Column-Wheel</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">Tactile single-pusher chronograph engagement architecture.</p>
-        </div>
-        <div style="background: var(--bg-surface); color: var(--text-light); padding: 1.75rem; border-radius: 12px; border: 1px solid var(--border-amber);">
-          <h3 style="color: var(--accent-amber); font-size: 1.2rem; margin-bottom: 0.5rem;">4. Mobile Workshop Van</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">On-demand estate laboratory equipped with 3D movement scanners.</p>
+
+        <div class="forge-card">
+          <div class="forge-img-wrap" style="height: 220px;">
+            <img src="https://images.unsplash.com/photo-1609587312208-cea54be969e7?auto=format&fit=crop&w=800&h=600&crop=faces&mechanic_slot=5" alt="Mobile Watchmaker Workshop Van Interior">
+          </div>
+          <div class="forge-body" style="padding: 1.5rem;">
+            <h3 style="color: var(--accent-amber); font-size: 1.2rem; margin-bottom: 0.5rem;">3. Mobile Workshop Van</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">On-demand estate laboratory equipped with 3D movement scanners.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Studio Headquarters Spotlight -->
+  <!-- Studio Headquarters Spotlight with Image -->
   <section class="section" style="background: var(--bg-surface); color: var(--text-light);">
     <div class="container">
-      <div style="background: var(--bg-card); padding: 3rem; border-radius: 16px; border: 1px solid var(--border-amber);">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+      <div style="background: var(--bg-card); padding: 3.5rem; border-radius: 16px; border: 1px solid var(--border-amber);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
           <div>
             <span class="hero-badge">📍 SOHO INDUSTRIAL HEADQUARTERS</span>
             <h2 class="font-display" style="font-size: 2.2rem; margin-bottom: 1.25rem; color: var(--accent-amber);">Our New York Chrono-Forge Lab</h2>
-            <p style="color: var(--text-light); margin-bottom: 1rem;">
+            <p style="color: var(--text-light); margin-bottom: 1rem; line-height: 1.8;">
               Located at 181 Mercer Street in Soho, our flagship horology laboratory features 5-axis CNC lathes, PVD vacuum chambers, and mobile restoration van dispatch.
             </p>
             <p style="color: var(--accent-amber); font-weight: 800; margin-bottom: 0.5rem;">📍 181 Mercer Street, New York, NY 10012, United States</p>
@@ -108,7 +144,7 @@
             <a href="contact.html" class="btn-forge btn-amber">Book Mobile Workshop</a>
           </div>
           <div>
-            <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?auto=format&fit=crop&w=800&h=600&crop=center&mechanic_slot=2" alt="Soho Industrial Watchmaker Studio Headquarters" style="border-radius: 12px; border: 1px solid var(--border-amber);">
+            <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&h=600&crop=top&mechanic_slot=6" alt="Soho Industrial Watchmaker Studio Headquarters" style="border-radius: 12px; border: 1px solid var(--border-amber); box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
           </div>
         </div>
       </div>
