@@ -1,4 +1,4 @@
-/* TickClockVan - Concept C Interactive JavaScript */
+/* MechanicTimeox - Concept D Interactive JavaScript */
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Navigation Toggle
   const mobileToggle = document.querySelector('.mobile-toggle');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Navbar Scroll Effect
-  const navbar = document.querySelector('.tick-nav');
+  const navbar = document.querySelector('.forge-nav');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
       navbar?.classList.add('scrolled');
@@ -33,51 +33,51 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Interactive Watch Movement Matrix (Concept C Feature)
-  const gearBtns = document.querySelectorAll('.gear-tab-btn');
-  const gearDisplay = document.getElementById('escapement-matrix-display');
+  // Interactive Micro-Tolerances & Machinery Matrix (Concept D Feature)
+  const matrixBtns = document.querySelectorAll('.matrix-tab-btn');
+  const matrixDisplay = document.getElementById('machinery-matrix-display');
 
-  const gearData = {
-    "deadbeat-escapement": {
-      "name": "Titanium Flying Tourbillon Escapement",
-      "metric": "60-Second Cage Rotation • 28,800 vph Frequency",
-      "notes": "Ultra-lightweight titanium tourbillon cage weighing just 0.28 grams that negates gravitational errors across all 6 wrist positions.",
-      "ideal": "Featured on The Sovereign Tourbillon Wristwatch"
+  const matrixData = {
+    "titanium-cnc": {
+      "name": "5-Axis CNC Micro-Milling Engine",
+      "metric": "0.001mm Micron Tolerance • 12,000 RPM Spindle",
+      "notes": "Precision carbide cutter milling grade-5 titanium tourbillon cages and chronograph bridge plates directly from solid billet stock.",
+      "ideal": "Featured on The Titan Chrono-Forge Monopusher"
     },
-    "invar-pendulum": {
-      "name": "Free-Sprung Variable Inertia Balance Wheel",
-      "metric": "Breguet Overcoil Spring • Gold Poising Screws",
-      "notes": "Free-sprung balance wheel adjusted via four gold inertia micro-screws, eliminating regulator curb pins for superior rate stability.",
-      "ideal": "Paired with The Monopusher Chronograph & GMT Automatics"
+    "dlc-coating": {
+      "name": "Diamond-Like Carbon (DLC) Plasma Deposition",
+      "metric": "4,500 Vickers Hardness • 2.5 Micron Layer",
+      "notes": "High-vacuum physical vapor deposition bonding diamond carbon lattices to steel watch cases for ultra-scratch-resistant tactical matte surfaces.",
+      "ideal": "Applied to The Tactical Stealth Automatic GMT"
     },
-    "mainspring-torque": {
-      "name": "Column-Wheel Monopusher Chronograph Engine",
-      "metric": "Horizontal Friction Clutch • 60-Minute Sub-Dial",
-      "notes": "Hand-machined steel column wheel delivering crisp tactile pusher response and smooth chronograph hand engagement.",
-      "ideal": "Applied across Monopusher Chronographs & Racing Timepieces"
+    "poising-lathe": {
+      "name": "Dynamic Balance Wheel Poising & Laser Resection",
+      "metric": "Laser Resection Tuning • 28,800 vph Balance Frequency",
+      "notes": "Laser-guided balance wheel inertia poising eliminating micro-eccentricity across 6-position chronometric testing.",
+      "ideal": "Integrated into all MechanicTimeox Skeleton Masterpieces"
     },
-    "mobile-van-atelier": {
-      "name": "Mobile Watchmaker Restoration Van Lab",
-      "metric": "On-Demand VIP Visit • 3D Movement Diagnostic Suite",
-      "notes": "Book our custom mobile watchmaker van for private home watch regulation, ultrasonic movement cleaning, and custom strap fitting.",
-      "ideal": "Private Estate Visits, Museum Restorations & Executive Tuning"
+    "mobile-van-workshop": {
+      "name": "Mobile Heavy Watchmaking Workshop Van",
+      "metric": "On-Site CNC Diagnostics • Mobile Cleanroom Suite",
+      "notes": "Custom heavy-duty Mercedes Sprinter mobile lab equipped with 3D optical comparators, ultrasonic degreasers, and custom strap fitting lounges.",
+      "ideal": "Private Estate Tuning, Executive Offices & Museum Restoration"
     }
   };
 
-  if (gearBtns.length > 0 && gearDisplay) {
-    gearBtns.forEach(btn => {
+  if (matrixBtns.length > 0 && matrixDisplay) {
+    matrixBtns.forEach(btn => {
       btn.addEventListener('click', function() {
-        gearBtns.forEach(b => b.classList.remove('active'));
+        matrixBtns.forEach(b => b.classList.remove('active'));
         this.classList.add('active');
 
-        const key = this.getAttribute('data-gear');
-        const data = gearData[key] || gearData["deadbeat-escapement"];
+        const key = this.getAttribute('data-matrix');
+        const data = matrixData[key] || matrixData["titanium-cnc"];
 
-        gearDisplay.innerHTML = `
-          <div style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-gold); margin-top: 1.5rem;">
-            <span style="display: inline-block; padding: 0.25rem 0.75rem; background: var(--accent-gold); color: #0D0E12; font-size: 0.75rem; font-weight: 800; border-radius: 4px; text-transform: uppercase; margin-bottom: 0.75rem;">${data.metric}</span>
+        matrixDisplay.innerHTML = `
+          <div style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-amber); margin-top: 1.5rem;">
+            <span style="display: inline-block; padding: 0.25rem 0.75rem; background: var(--accent-amber); color: #111318; font-size: 0.75rem; font-weight: 800; border-radius: 4px; text-transform: uppercase; margin-bottom: 0.75rem;">${data.metric}</span>
             <h3 style="font-size: 1.5rem; color: var(--text-light); margin-bottom: 0.5rem;">${data.name}</h3>
-            <p style="color: var(--accent-gold); font-weight: 800; font-size: 1.1rem; margin-bottom: 0.75rem;">⌚ Watch Spec Pairing: ${data.ideal}</p>
+            <p style="color: var(--accent-amber); font-weight: 800; font-size: 1.1rem; margin-bottom: 0.75rem;">⚙️ Machinery Spec Pairing: ${data.ideal}</p>
             <p style="color: var(--text-muted); font-size: 0.95rem;">${data.notes}</p>
           </div>
         `;

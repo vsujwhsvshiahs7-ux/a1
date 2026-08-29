@@ -1,20 +1,20 @@
-/* TickClockVan - Concept C: Steampunk Horology & Wristwatch Chrono-Lab */
+/* MechanicTimeox - Concept D: Industrial Chrono-Forge & Micro-Mechanics */
 :root {
-  --bg-dark: #0D0E12;
-  --bg-surface: #121824;
-  --bg-card: #182030;
-  --text-light: #F7F5F0;
-  --text-dark: #0D0E12;
-  --text-muted: #A39171;
-  --accent-gold: #E6B800;
-  --accent-bronze: #B87333;
-  --accent-copper: #D97736;
-  --border-gold: rgba(230, 184, 0, 0.35);
-  --border-bronze: rgba(184, 115, 51, 0.4);
-  --font-display: 'Cinzel Decorative', serif;
-  --font-heading: 'Marcellus', serif;
+  --bg-dark: #111318;
+  --bg-surface: #0B1E28;
+  --bg-card: #181C24;
+  --text-light: #E2E8F0;
+  --text-dark: #111318;
+  --text-muted: #8E9AAB;
+  --accent-amber: #FF6B00;
+  --accent-cyan: #4A8B9D;
+  --accent-gunmetal: #4A5568;
+  --border-amber: rgba(255, 107, 0, 0.4);
+  --border-cyan: rgba(74, 139, 157, 0.35);
+  --font-display: 'Oxanium', cursive, sans-serif;
+  --font-heading: 'Rajdhani', sans-serif;
   --font-sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-  --transition-chrono: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-industrial: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 *, *::before, *::after {
@@ -41,23 +41,23 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   color: var(--text-light);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.5px;
 }
 
 .font-display {
   font-family: var(--font-display) !important;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
-.gradient-gold {
-  color: var(--accent-gold);
+.gradient-amber {
+  color: var(--accent-amber);
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  transition: var(--transition-chrono);
+  transition: var(--transition-industrial);
 }
 
 img {
@@ -75,23 +75,23 @@ img {
 }
 
 /* Navigation Header */
-.tick-nav {
+.forge-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   padding: 1.25rem 0;
-  background: rgba(13, 14, 18, 0.95);
+  background: rgba(17, 19, 24, 0.95);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-gold);
-  transition: var(--transition-chrono);
+  border-bottom: 1px solid var(--border-amber);
+  transition: var(--transition-industrial);
 }
 
-.tick-nav.scrolled {
+.forge-nav.scrolled {
   padding: 0.85rem 0;
-  background: rgba(13, 14, 18, 0.98);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  background: rgba(17, 19, 24, 0.98);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.85);
 }
 
 .brand-logo {
@@ -105,7 +105,7 @@ img {
 }
 
 .brand-logo span {
-  color: var(--accent-gold);
+  color: var(--accent-amber);
 }
 
 .nav-links {
@@ -125,7 +125,7 @@ img {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent-gold);
+  color: var(--accent-amber);
 }
 
 .mobile-toggle {
@@ -138,12 +138,12 @@ img {
 }
 
 /* Hero Section */
-.tick-hero {
+.forge-hero {
   padding-top: 9.5rem;
   padding-bottom: 5rem;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 70% 30%, #1A2436 0%, #0D0E12 70%);
+  background: radial-gradient(circle at 70% 30%, #0B1E28 0%, #111318 70%);
 }
 
 .hero-badge {
@@ -152,25 +152,25 @@ img {
   gap: 0.5rem;
   padding: 0.35rem 1rem;
   background: var(--bg-surface);
-  border: 1px solid var(--accent-gold);
-  color: var(--accent-gold);
+  border: 1px solid var(--accent-amber);
+  color: var(--accent-amber);
   font-size: 0.75rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  border-radius: 30px;
+  border-radius: 4px;
   font-weight: 700;
   margin-bottom: 1.25rem;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3.8rem;
   line-height: 1.08;
   margin-bottom: 1.5rem;
   color: var(--text-light);
 }
 
 /* Buttons */
-.btn-chrono {
+.btn-forge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -181,30 +181,30 @@ img {
   letter-spacing: 2px;
   border-radius: 4px;
   cursor: pointer;
-  transition: var(--transition-chrono);
+  transition: var(--transition-industrial);
   border: none;
 }
 
-.btn-gold {
-  background: var(--accent-gold);
-  color: #0D0E12;
-  box-shadow: 0 4px 20px rgba(230, 184, 0, 0.35);
+.btn-amber {
+  background: var(--accent-amber);
+  color: #111318;
+  box-shadow: 0 4px 20px rgba(255, 107, 0, 0.4);
 }
 
-.btn-gold:hover {
+.btn-amber:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(230, 184, 0, 0.5);
-  background: #FFCC00;
+  box-shadow: 0 8px 28px rgba(255, 107, 0, 0.6);
+  background: #FF8533;
 }
 
-.btn-outline-gold {
-  border: 1px solid var(--accent-gold);
-  color: var(--accent-gold);
+.btn-outline-amber {
+  border: 1px solid var(--accent-amber);
+  color: var(--accent-amber);
   background: transparent;
 }
 
-.btn-outline-gold:hover {
-  background: var(--accent-gold);
+.btn-outline-amber:hover {
+  background: var(--accent-amber);
   color: var(--text-dark);
 }
 
@@ -222,7 +222,7 @@ img {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: var(--accent-gold);
+  color: var(--accent-amber);
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -233,62 +233,62 @@ img {
   color: var(--text-light);
 }
 
-/* Signature Clock Cards */
-.clock-card {
-  background: var(--bg-surface);
+/* Signature Cards */
+.forge-card {
+  background: var(--bg-card);
   color: var(--text-light);
-  border: 1px solid var(--border-gold);
-  border-radius: 16px;
+  border: 1px solid var(--border-amber);
+  border-radius: 12px;
   overflow: hidden;
-  transition: var(--transition-chrono);
+  transition: var(--transition-industrial);
   display: flex;
   flex-direction: column;
 }
 
-.clock-card:hover {
+.forge-card:hover {
   transform: translateY(-6px);
-  border-color: var(--accent-gold);
-  box-shadow: 0 15px 35px rgba(230, 184, 0, 0.25);
+  border-color: var(--accent-amber);
+  box-shadow: 0 15px 35px rgba(255, 107, 0, 0.3);
 }
 
-.clock-img-wrap {
+.forge-img-wrap {
   height: 280px;
   overflow: hidden;
   position: relative;
 }
 
-.clock-img-wrap img {
+.forge-img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.clock-card:hover .clock-img-wrap img {
+.forge-card:hover .forge-img-wrap img {
   transform: scale(1.06);
 }
 
-.clock-body {
+.forge-body {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-/* Interactive Escapement & Pendulum Gear Matrix (Concept C Feature) */
-.escapement-matrix-card {
+/* Interactive Micro-Tolerances Matrix (Concept D Feature) */
+.machinery-matrix-card {
   background: var(--bg-surface);
   color: var(--text-light);
-  border: 1px solid var(--border-gold);
-  border-radius: 20px;
+  border: 1px solid var(--border-amber);
+  border-radius: 16px;
   padding: 3rem;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
 }
 
-.gear-tab-btn {
+.matrix-tab-btn {
   padding: 0.75rem 1.75rem;
   background: transparent;
-  border: 1px solid var(--border-gold);
+  border: 1px solid var(--border-amber);
   color: var(--text-light);
   border-radius: 4px;
   cursor: pointer;
@@ -296,28 +296,28 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  transition: var(--transition-chrono);
+  transition: var(--transition-industrial);
 }
 
-.gear-tab-btn.active, .gear-tab-btn:hover {
-  background: var(--accent-gold);
-  border-color: var(--accent-gold);
-  color: #0D0E12;
+.matrix-tab-btn.active, .matrix-tab-btn:hover {
+  background: var(--accent-amber);
+  border-color: var(--accent-amber);
+  color: #111318;
 }
 
 /* Gallery Grid */
-.horology-gallery {
+.industrial-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
 .gallery-tile {
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
   height: 300px;
   position: relative;
-  border: 1px solid var(--border-gold);
+  border: 1px solid var(--border-amber);
 }
 
 .gallery-tile img {
@@ -333,20 +333,20 @@ img {
 
 /* Blog Cards */
 .blog-card {
-  background: var(--bg-surface);
+  background: var(--bg-card);
   color: var(--text-light);
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--border-gold);
-  transition: var(--transition-chrono);
+  border: 1px solid var(--border-amber);
+  transition: var(--transition-industrial);
   display: flex;
   flex-direction: column;
 }
 
 .blog-card:hover {
   transform: translateY(-6px);
-  border-color: var(--accent-gold);
-  box-shadow: 0 15px 35px rgba(230, 184, 0, 0.25);
+  border-color: var(--accent-amber);
+  box-shadow: 0 15px 35px rgba(255, 107, 0, 0.3);
 }
 
 .blog-img-wrap {
@@ -383,14 +383,14 @@ img {
 .policy-content h2 {
   font-size: 1.85rem;
   margin: 2.5rem 0 1rem;
-  color: var(--accent-gold);
+  color: var(--accent-amber);
 }
 
 /* Footer */
 footer {
-  background: #050608;
+  background: #08090C;
   color: var(--text-light);
-  border-top: 1px solid var(--border-gold);
+  border-top: 1px solid var(--border-amber);
   padding: 5rem 0 3rem;
   margin-top: 4rem;
 }
@@ -407,7 +407,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1.5rem;
-  color: var(--accent-gold);
+  color: var(--accent-amber);
 }
 
 .footer-col p, .footer-col ul {
@@ -425,7 +425,7 @@ footer {
 }
 
 .footer-col ul li a:hover {
-  color: var(--accent-gold);
+  color: var(--accent-amber);
 }
 
 .footer-bottom {
@@ -440,8 +440,8 @@ footer {
 
 /* Responsive */
 @media (max-width: 992px) {
-  .hero-title { font-size: 3.2rem; }
-  .horology-gallery { grid-template-columns: 1fr 1fr; }
+  .hero-title { font-size: 3rem; }
+  .industrial-gallery { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
@@ -459,6 +459,6 @@ footer {
   }
   .nav-links.active { left: 0; }
   .mobile-toggle { display: block; }
-  .hero-title { font-size: 2.5rem; }
-  .horology-gallery, .footer-grid { grid-template-columns: 1fr; }
+  .hero-title { font-size: 2.3rem; }
+  .industrial-gallery, .footer-grid { grid-template-columns: 1fr; }
 }
