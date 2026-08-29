@@ -64,7 +64,7 @@
         </div>
 
         <div style="position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-gold); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);">
-          <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=center&watch_slot=1" alt="TickClockVan Mechanical Tourbillon Wristwatch Movement" style="width: 100%; height: 500px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=faces&watch_fresh=15" alt="TickClockVan Mechanical Tourbillon Wristwatch Movement" style="width: 100%; height: 500px; object-fit: cover;">
           <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1.5rem; background: linear-gradient(0deg, rgba(13,14,18,0.95) 0%, transparent 100%);">
             <span style="font-size: 0.75rem; color: var(--accent-gold); font-weight: 800; text-transform: uppercase;">Flagship Watch Creation</span>
             <h3 style="color: var(--text-light); font-size: 1.3rem;">The Sovereign Flying Tourbillon Chronograph</h3>
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div>
-          <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=top&watch_slot=2" alt="TickClockVan Master Watchmaker Loupe Workshop" style="border-radius: 16px; border: 1px solid var(--border-gold);">
+          <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=top&watch_fresh=16" alt="TickClockVan Master Watchmaker Loupe Workshop" style="border-radius: 16px; border: 1px solid var(--border-gold);">
         </div>
       </div>
     </div>
@@ -112,7 +112,7 @@
         <!-- Creation 1 -->
         <div class="clock-card">
           <div class="clock-img-wrap">
-            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=bottom&watch_slot=3" alt="The Sovereign Flying Tourbillon Chronograph">
+            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=center&watch_fresh=17" alt="The Sovereign Flying Tourbillon Chronograph">
           </div>
           <div class="clock-body">
             <span style="font-size: 0.75rem; color: var(--accent-gold); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">60-Second Tourbillon • Alligator Strap</span>
@@ -130,7 +130,7 @@
         <!-- Creation 2 -->
         <div class="clock-card">
           <div class="clock-img-wrap">
-            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=entropy&watch_slot=4" alt="The Heritage Monopusher Chronograph">
+            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=bottom&watch_fresh=18" alt="The Heritage Monopusher Chronograph">
           </div>
           <div class="clock-body">
             <span style="font-size: 0.75rem; color: var(--accent-gold); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">Column-Wheel • Hand-Stitched Leather</span>
@@ -148,7 +148,7 @@
         <!-- Creation 3 -->
         <div class="clock-card">
           <div class="clock-img-wrap">
-            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=faces&watch_slot=5" alt="The Skeleton Automatic GMT Timepiece">
+            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=entropy&watch_fresh=19" alt="The Skeleton Automatic GMT Timepiece">
           </div>
           <div class="clock-body">
             <span style="font-size: 0.75rem; color: var(--accent-gold); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">Skeleton Movement • Dual Time Zone</span>
@@ -207,13 +207,13 @@
 
       <div class="horology-gallery">
         <div class="gallery-tile">
-          <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=top&watch_slot=6" alt="Master Watchmaker Inspecting Watch Movement under Loupe">
+          <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=faces&watch_fresh=20" alt="Master Watchmaker Inspecting Watch Movement under Loupe">
         </div>
         <div class="gallery-tile">
-          <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=center&watch_slot=7" alt="Mechanical Watch Movement Gear Assembly Workbench">
+          <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=top&watch_fresh=21" alt="Mechanical Watch Movement Gear Assembly Workbench">
         </div>
         <div class="gallery-tile">
-          <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=bottom&watch_slot=8" alt="Mobile Watchmaker Van Fitting Lounge Experience">
+          <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=center&watch_fresh=22" alt="Mobile Watchmaker Van Fitting Lounge Experience">
         </div>
       </div>
     </div>
@@ -281,7 +281,7 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
         <div class="blog-card">
           <div class="blog-img-wrap">
-            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=center&watch_slot=9" alt="Mastering Tourbillon Watch Movement Physics">
+            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=bottom&watch_fresh=23" alt="Mastering Tourbillon Watch Movement Physics">
           </div>
           <div class="blog-body">
             <span style="font-size: 0.75rem; color: var(--accent-gold); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">August 24, 2026 • 1,245 Words</span>
@@ -293,7 +293,7 @@
 
         <div class="blog-card">
           <div class="blog-img-wrap">
-            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=top&watch_slot=10" alt="Free-Sprung Balance Spring Regulation in Wristwatches">
+            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=entropy&watch_fresh=24" alt="Free-Sprung Balance Spring Regulation in Wristwatches">
           </div>
           <div class="blog-body">
             <span style="font-size: 0.75rem; color: var(--accent-gold); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">August 20, 2026 • 1,247 Words</span>
@@ -305,7 +305,7 @@
 
         <div class="blog-card">
           <div class="blog-img-wrap">
-            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=bottom&watch_slot=11" alt="Column-Wheel Chronograph Mechanics & Power Reserve">
+            <img src="https://images.unsplash.com/photo-1560060141-7b9018741ced?auto=format&fit=crop&w=800&h=600&crop=faces&watch_fresh=25" alt="Column-Wheel Chronograph Mechanics & Power Reserve">
           </div>
           <div class="blog-body">
             <span style="font-size: 0.75rem; color: var(--accent-gold); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">August 16, 2026 • 1,247 Words</span>
