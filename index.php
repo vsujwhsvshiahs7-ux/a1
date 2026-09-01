@@ -1,380 +1,334 @@
 <?php
-// MechanicTimeox - Concept D: Industrial Chrono-Forge & Micro-Mechanics Atelier
+$site_name = "Mechanic Time Ox";
+$site_tagline = "Haute Horology & Master Watchmaking Manufacture";
+$official_address = "181 Mercer Street, New York, NY 10012, United States";
+$official_phone = "+1-888-777-5845";
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MechanicTimeox — Industrial Mechanical Chronometry & Mobile Watchmaker Atelier</title>
-  <meta name="description" content="MechanicTimeox is Soho New York's premier industrial watchmaking atelier specializing in raw titanium tourbillons, DLC coated chronographs, micro-machining, and mobile watchmaker van workshop visits.">
-  
+  <title>Mechanic Time Ox | Haute Horology & Master Watchmaking Manufacture</title>
+  <meta name="description" content="Discover Mechanic Time Ox: bespoke mechanical chronometers, hand-anglage finishing, tourbillons, rose engine guilloché dials, and watchmaking atelier in Manhattan.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230B0E14' stroke='%23D4AF37' stroke-width='4'/><circle cx='50' cy='50' r='30' fill='none' stroke='%23E5A988' stroke-width='2'/><line x1='50' y1='50' x2='50' y2='25' stroke='%23D4AF37' stroke-width='3'/><line x1='50' y1='50' x2='68' y2='50' stroke='%23F1F5F9' stroke-width='2'/><circle cx='50' cy='50' r='4' fill='%23D4AF37'/></svg>">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-0LY0HY7L01');
   </script>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Rajdhani:wght@600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- Navigation Header -->
-  <header class="forge-nav">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-      <a href="index.php" class="brand-logo">Mechanic<span>Timeox</span></a>
-      <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
-      <ul class="nav-links">
-        <li><a href="index.php" class="active">Home</a></li>
-        <li><a href="about.html">Atelier</a></li>
-        <li><a href="#creations">Machines</a></li>
-        <li><a href="#matrix">Tolerances Matrix</a></li>
-        <li><a href="blog.html">Journal</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="btn-forge btn-amber" style="padding: 0.5rem 1.25rem; font-size: 0.75rem;">Book Mobile Workshop</a></li>
-      </ul>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.php" class="brand-container">
+          <div class="brand-logo-icon">🦊</div>
+          <div class="brand-text-wrap">
+            <span class="brand-logo-text"><?php echo $site_name; ?></span>
+            <span class="brand-tagline"><?php echo $site_tagline; ?></span>
+          </div>
+        </a>
+        <nav class="main-nav">
+          <a href="index.php" class="nav-link active">Main</a>
+          <a href="about.html" class="nav-link">Manufacture</a>
+          <a href="blog.html" class="nav-link">Horology Journal</a>
+          <a href="contact.html" class="nav-link">Commission</a>
+        </nav>
+        <div class="nav-cta"><a href="contact.html" class="btn-watch btn-gold">Commission Caliber</a></div>
+        <button class="mobile-toggle" aria-label="Toggle Navigation"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
-
-  <!-- SECTION 1: Chrono-Forge Hero (Concept D Feature) -->
-  <section class="forge-hero" id="hero">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3rem; align-items: center;">
-        <div>
-          <span class="hero-badge">⚙️ HEAVY INDUSTRIAL CHRONOMETRY & MOBILE WORKSHOP</span>
-          <h1 class="font-display hero-title">
-            INDUSTRIAL MICRO-MECHANICS & <span class="gradient-amber">MOBILE WATCHMAKER VAN</span>
-          </h1>
-          <p style="color: var(--text-light); font-size: 1.15rem; margin-bottom: 2rem; max-width: 600px;">
-            Engineered from solid grade-5 titanium billets with DLC diamond coating, 5-axis CNC gear milling, and private mobile watchmaking van lounge service.
-          </p>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="#creations" class="btn-forge btn-amber">Explore Timepiece Machines</a>
-            <a href="#matrix" class="btn-forge btn-outline-amber">Inspect Tolerances Matrix</a>
-          </div>
-        </div>
-
-        <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-amber); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);">
-          <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&w=800&h=600&crop=entropy&mechanic_slot=19" alt="MechanicTimeox Grade-5 Titanium Tourbillon Engine Movement" style="width: 100%; height: 500px; object-fit: cover;">
-          <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1.5rem; background: linear-gradient(0deg, rgba(17,19,24,0.95) 0%, transparent 100%);">
-            <span style="font-size: 0.75rem; color: var(--accent-amber); font-weight: 800; text-transform: uppercase;">Flagship Industrial Machine</span>
-            <h3 style="color: var(--text-light); font-size: 1.3rem;">The Titan Chrono-Forge Monopusher</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 2: The MechanicTimeox Story -->
-  <section class="section" id="story" style="background: var(--bg-surface); color: var(--text-light);">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-        <div>
-          <span class="section-subtitle">Industrial Engineering & Chronometry</span>
-          <h2 class="section-title" style="font-size: 2.8rem; margin-bottom: 1.5rem; color: var(--accent-amber);">Where Heavy Machinery Meets High Watchmaking</h2>
-          <p style="color: var(--text-light); margin-bottom: 1.25rem; line-height: 1.8;">
-            MechanicTimeox was established at 181 Mercer Street in Soho to push watchmaking into the industrial future by combining aerospace-grade CNC machining with mobile watchmaker workshop vans.
-          </p>
-          <p style="color: var(--text-light); margin-bottom: 1.5rem; line-height: 1.8;">
-            Our mobile workshop van features on-site 3D optical comparators, ultrasonic solvent degreasers, and micro-lathes that deliver high-precision watch movement regulation directly to private estates and executive offices.
-          </p>
-          <div style="padding: 1.25rem; background: var(--bg-card); border-left: 3px solid var(--accent-amber); border-radius: 4px;">
-            <p style="color: var(--accent-amber); font-family: var(--font-heading); font-size: 1.15rem; font-style: italic; margin: 0;">
-              "True chronometry is industrial truth—where 0.001mm micro-machining tolerances transform raw titanium billets into indestructible timepieces."
+  <main>
+    <!-- Section 1: Hero Showcase -->
+    <section class="hero-watch">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <span class="section-tag">Haute Horology & Chronometric Art</span>
+            <h1 class="hero-title">The Sacred Mechanics of <span>Master Timepieces.</span></h1>
+            <p class="hero-subtitle">
+              Crafting bespoke hand-finished mechanical chronometers, multi-axis tourbillons, and engine-turned guilloché dials in our private Manhattan watchmaking atelier.
             </p>
-          </div>
-        </div>
-        <div>
-          <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?auto=format&fit=crop&w=800&h=600&crop=faces&mechanic_slot=20" alt="MechanicTimeox Industrial CNC Lathe Watchmaking Workshop" style="border-radius: 12px; border: 1px solid var(--border-amber);">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 3: Signature Timepiece Creations -->
-  <section class="section" id="creations">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Mechanical Engineering Machines</span>
-        <h2 class="section-title">Signature Horological Timepieces</h2>
-      </div>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-        <!-- Machine 1 -->
-        <div class="forge-card">
-          <div class="forge-img-wrap">
-            <img src="https://images.unsplash.com/photo-1619252584172-a83a949b6efd?auto=format&fit=crop&w=800&h=600&crop=top&mechanic_slot=21" alt="The Titan Chrono-Forge Monopusher">
-          </div>
-          <div class="forge-body">
-            <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">Grade-5 Titanium • Column Wheel</span>
-            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--text-light);">The Titan Chrono-Forge Monopusher</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
-              Monolithic titanium chassis housing a 28,800 vph column-wheel monopusher movement with sapphire exhibition caseback.
-            </p>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="color: var(--accent-amber); font-weight: 800; font-size: 1.2rem;">$28,900 USD</span>
-              <a href="contact.html" class="btn-forge btn-amber" style="padding: 0.5rem 1rem; font-size: 0.75rem;">Commission Machine</a>
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+              <a href="contact.html" class="btn-watch btn-gold">Commission Bespoke Timepiece</a>
+              <a href="about.html" class="btn-watch btn-outline">Explore Caliber Craft</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item"><h4>&plusmn;1 Sec/Day</h4><p>Chronometric Isochronism</p></div>
+              <div class="stat-item"><h4>100% Hand Anglage</h4><p>Mirror Beveled Edges</p></div>
+              <div class="stat-item"><h4>Bespoke</h4><p>Manhattan Atelier Commissions</p></div>
             </div>
           </div>
-        </div>
-
-        <!-- Machine 2 -->
-        <div class="forge-card">
-          <div class="forge-img-wrap">
-            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&h=600&crop=center&mechanic_slot=22" alt="The Tactical Stealth Automatic GMT">
-          </div>
-          <div class="forge-body">
-            <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">DLC Diamond Coating • Dual Time Zone</span>
-            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--text-light);">The Tactical Stealth Automatic GMT</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
-              Vickers 4,500 DLC coated black steel case featuring 24-hour dual timezone bezel and rubberized Kevlar strap.
-            </p>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="color: var(--accent-amber); font-weight: 800; font-size: 1.2rem;">$19,400 USD</span>
-              <a href="contact.html" class="btn-forge btn-amber" style="padding: 0.5rem 1rem; font-size: 0.75rem;">Commission Machine</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Machine 3 -->
-        <div class="forge-card">
-          <div class="forge-img-wrap">
-            <img src="https://images.unsplash.com/photo-1609587312208-cea54be969e7?auto=format&fit=crop&w=800&h=600&crop=bottom&mechanic_slot=23" alt="The Openworked Skeleton Tourbillon Engine">
-          </div>
-          <div class="forge-body">
-            <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">60-Sec Flying Tourbillon • Skeletonized</span>
-            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--text-light);">The Skeleton Tourbillon Engine</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
-              Fully openworked skeleton movement showcasing titanium tourbillon cage, flame-blued hands, and 80-hour power reserve.
-            </p>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="color: var(--accent-amber); font-weight: 800; font-size: 1.2rem;">$32,000 USD</span>
-              <a href="contact.html" class="btn-forge btn-amber" style="padding: 0.5rem 1rem; font-size: 0.75rem;">Commission Machine</a>
-            </div>
+          <div class="hero-img-box">
+            <img src="assets/images/hero-mechanical-watch.jpg" alt="Macro skeleton mechanical watch dial with visible tourbillon gear wheels and blued steel hands">
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SECTION 4: Interactive Micro-Tolerances & Machinery Matrix -->
-  <section class="section" id="matrix" style="background: var(--bg-surface); color: var(--text-light);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Micro-Mechanics Specs</span>
-        <h2 class="section-title" style="color: var(--accent-amber);">Machinery & Tolerances Matrix</h2>
-        <p style="color: var(--text-muted); max-width: 600px; margin: 0.5rem auto 0;">
-          Select a CNC milling engine, plasma coating, laser poising, or mobile workshop van below to inspect industrial specs:
-        </p>
-      </div>
-
-      <div class="machinery-matrix-card" style="max-width: 900px; margin: 0 auto; text-align: center;">
-        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-          <button class="matrix-tab-btn active" data-matrix="titanium-cnc">5-Axis CNC Milling</button>
-          <button class="matrix-tab-btn" data-matrix="dlc-coating">DLC Coating</button>
-          <button class="matrix-tab-btn" data-matrix="poising-lathe">Laser Balance Poising</button>
-          <button class="matrix-tab-btn" data-matrix="mobile-van-workshop">Mobile Workshop Van</button>
+    <!-- Section 2: Three Pillars of Haute Horology -->
+    <section class="section" style="background: var(--color-subtle-bg);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Horological Pillars</span>
+          <h2>The Architecture of Mechanical Time</h2>
+          <p>Every timepiece unifies frictionless escapement mechanics, meticulous hand-finishing anglage, and kinetic tourbillon regulation.</p>
         </div>
-
-        <div id="machinery-matrix-display">
-          <div style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-amber); margin-top: 1.5rem;">
-            <span style="display: inline-block; padding: 0.25rem 0.75rem; background: var(--accent-amber); color: #111318; font-size: 0.75rem; font-weight: 800; border-radius: 4px; text-transform: uppercase; margin-bottom: 0.75rem;">0.001mm Micron Tolerance • 12,000 RPM Spindle</span>
-            <h3 style="font-size: 1.5rem; color: var(--text-light); margin-bottom: 0.5rem;">5-Axis CNC Micro-Milling Engine</h3>
-            <p style="color: var(--accent-amber); font-weight: 800; font-size: 1.1rem; margin-bottom: 0.75rem;">⚙️ Machinery Spec Pairing: Featured on The Titan Chrono-Forge Monopusher</p>
-            <p style="color: var(--text-muted); font-size: 0.95rem;">Precision carbide cutter milling grade-5 titanium tourbillon cages and chronograph bridge plates directly from solid billet stock.</p>
+        <div class="grid-3">
+          <div class="watch-card">
+            <div class="card-img-wrap"><img src="assets/images/craft-coaxial-escapement.jpg" alt="Macro view of precision co-axial escapement balance wheel" loading="lazy"><span class="card-tag-pill">Isochronism</span></div>
+            <div class="card-body"><h3>Radial Escapement Kinetics</h3><p>Delivering tangential impulses that eliminate sliding friction, preserving lubrication and chronometric accuracy over decades.</p><a href="about.html" class="card-link">Explore Escapements &rarr;</a></div>
+          </div>
+          <div class="watch-card">
+            <div class="card-img-wrap"><img src="assets/images/craft-hand-anglage.jpg" alt="Master watchmaker hand-beveling movement bridges with gentian wood pegs" loading="lazy"><span class="card-tag-pill">Hand Finishing</span></div>
+            <div class="card-body"><h3>Hand Anglage & Black Polish</h3><p>45-degree hand-filed chamfers and specular black mirror polish on steel bridges, executed under high-magnification microscopes.</p><a href="about.html" class="card-link">Explore Hand Finishing &rarr;</a></div>
+          </div>
+          <div class="watch-card">
+            <div class="card-img-wrap"><img src="assets/images/craft-tourbillon-cage.jpg" alt="Intricate multi-axis tourbillon titanium cage rotating within movement" loading="lazy"><span class="card-tag-pill">Tourbillon</span></div>
+            <div class="card-body"><h3>Multi-Axis Tourbillons</h3><p>Rotating balance assemblies that average out gravitational rate deviations in vertical wrist positions for uncompromising precision.</p><a href="about.html" class="card-link">Explore Tourbillons &rarr;</a></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SECTION 5: Live Industrial Watchmaker Atelier & Mobile Van Gallery -->
-  <section class="section" id="gallery">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Visual Atmosphere</span>
-        <h2 class="section-title">Mobile Workshop & Industrial Gallery</h2>
-      </div>
-
-      <div class="industrial-gallery">
-        <div class="gallery-tile">
-          <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&h=600&crop=entropy&mechanic_slot=24" alt="Master Watchmaker Inspection under Loupe">
+    <!-- Section 3: Signature Caliber Collection -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Caliber Portfolio</span>
+          <h2>The Master Timepiece Collection</h2>
+          <p>Individually numbered chronometers regulated to observatory chronometer standards in our Manhattan workshop.</p>
         </div>
-        <div class="gallery-tile">
-          <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&h=600&crop=faces&mechanic_slot=25" alt="Mechanical Watch Movement Gear Assembly Bench">
-        </div>
-        <div class="gallery-tile">
-          <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=800&h=600&crop=top&mechanic_slot=26" alt="Mobile Watchmaker Van Workshop Experience">
+        <div class="grid-3">
+          <div class="watch-card"><div class="card-body"><h3>The Chronomètre Souverain</h3><p>Twin-barrel 72-hour power reserve movement featuring a free-sprung gyromax balance and solid red gold mainplates.</p><a href="contact.html" class="card-link">Request Allocation &rarr;</a></div></div>
+          <div class="watch-card"><div class="card-body"><h3>The Tri-Axial Tourbillon</h3><p>A titanium tourbillon cage completing nested rotations every 30, 60, and 120 seconds for total gravitational neutralization.</p><a href="contact.html" class="card-link">Request Allocation &rarr;</a></div></div>
+          <div class="watch-card"><div class="card-body"><h3>The Ultra-Thin Micro-Rotor</h3><p>A 2.8mm caliber powered by a solid platinum off-centered micro-rotor, showcasing hand-turned Clous de Paris guilloché.</p><a href="contact.html" class="card-link">Request Allocation &rarr;</a></div></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SECTION 6: International Chronometry Society & Connoisseur Reviews -->
-  <section class="section" id="reviews" style="background: var(--bg-surface); color: var(--text-light);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Engineering Acclaim</span>
-        <h2 class="section-title" style="color: var(--accent-amber);">Industrial Chronometry Endorsements</h2>
-      </div>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-        <div style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-amber);">
-          <p style="color: var(--text-light); font-style: italic; margin-bottom: 1.5rem;">
-            "The 0.001mm machining precision on the Titan Monopusher chassis is staggering. MechanicTimeox has bridged aerospace engineering and high horology."
-          </p>
-          <div style="display: flex; gap: 1rem; align-items: center;">
-            <div style="width: 45px; height: 45px; border-radius: 50%; background: var(--accent-amber); color: #111318; display: flex; align-items: center; justify-content: center; font-weight: 800;">VR</div>
+    <!-- Section 4: Interactive Caliber Configurator -->
+    <section class="section" style="background: var(--color-subtle-bg);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Watch Studio</span>
+          <h2>Configure Your Bespoke Caliber</h2>
+          <p>Select your preferred escapement architecture, finishing anglage tier, and dial guilloché pattern.</p>
+        </div>
+        <div class="interactive-watch-tool">
+          <div class="watch-selector-grid">
+            <div class="watch-option-card active" data-caliber="tourbillon"><h4>Tri-Axial Tourbillon</h4><p>Multi-axis gravitational compensation, 21,600 vph, titanium cage.</p></div>
+            <div class="watch-option-card" data-caliber="coaxial"><h4>Co-Axial Chronometer</h4><p>Radial impulse kinematics, free-sprung balance, zero sliding friction.</p></div>
+            <div class="watch-option-card" data-caliber="guilloche"><h4>Rose Engine Guilloché</h4><p>Hand-turned silver dial, Clous de Paris, flame-blued hands.</p></div>
+          </div>
+          <div class="watch-result-box">
             <div>
-              <strong style="color: var(--accent-amber); display: block;">Vikram Vance</strong>
-              <span style="color: var(--text-muted); font-size: 0.85rem;">Aerospace Metallurgist & Watch Collector</span>
+              <div id="watch-custom-badge" style="color: var(--color-gold); font-weight: 700; font-size: 0.85rem; margin-bottom: 6px; letter-spacing: 0.05em; text-transform: uppercase;">Caliber Specification: 21,600 vph &bull; 72-Hour Power Reserve &bull; Hand-Polished Anglage</div>
+              <h3 id="watch-custom-title" style="margin-bottom: 8px;">The Flying Tri-Axial Tourbillon Caliber</h3>
+              <p id="watch-custom-desc" style="color: var(--color-text-muted); font-size: 0.95rem;">Hand-finished titanium cage rotating across 3 axes to counteract gravitational perturbation on the balance spring.</p>
+            </div>
+            <a href="contact.html" class="btn-watch btn-gold" style="white-space: nowrap;">Commission This Caliber</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: The Master Watchmaker's Manifesto -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <span class="section-tag">Horological Manifesto</span>
+            <h2 style="font-size: 2.3rem; margin-bottom: 20px;">Master Horologist: The Soul of Mechanical Precision</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: 16px;">
+              In an era of disposable digital screens, a mechanical timepiece represents the ultimate triumph of human mechanical ingenuity: a miniature kinetic engine beating 28,800 times an hour, powered solely by a coiled spring.
+            </p>
+            <p style="color: var(--color-text-muted); margin-bottom: 24px;">
+              At Mechanic Time Ox, we honor the unhurried discipline of traditional Swiss and Saxon watchmaking, executing every bevel, polish, and regulation by hand in our SoHo atelier:
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px;">
+              <div style="background: var(--color-card-bg); padding: 16px 20px; border-radius: var(--radius-sm); border: 1px solid var(--color-border);">
+                <div style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: 4px;">⚙️ Free-Sprung Balances</div>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 0;">Micro-metric gold inertia screws ensuring stable chronometric rate consistency.</p>
+              </div>
+              <div style="background: var(--color-card-bg); padding: 16px 20px; border-radius: var(--radius-sm); border: 1px solid var(--color-border);">
+                <div style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: 4px;">✨ Specular Black Polish</div>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 0;">Zinc plate diamond paste lapping creating optical black reflection angles.</p>
+              </div>
+              <div style="background: var(--color-card-bg); padding: 16px 20px; border-radius: var(--radius-sm); border: 1px solid var(--color-border);">
+                <div style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: 4px;">🌀 Rose Engine Lathes</div>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 0;">Manual antique geometric lathes engraving solid sterling silver dial blanks.</p>
+              </div>
+              <div style="background: var(--color-card-bg); padding: 16px 20px; border-radius: var(--radius-sm); border: 1px solid var(--color-border);">
+                <div style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: 4px;">🏛️ Manhattan Atelier</div>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 0;">Private watchmaker workbenches and client commissioning suites at 181 Mercer St.</p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+              <a href="about.html" class="btn-watch btn-gold">Read Atelier Story &rarr;</a>
+              <a href="contact.html" class="btn-watch btn-outline">Book Private Viewing</a>
+            </div>
+          </div>
+          <div class="hero-img-box" style="position: relative;">
+            <img src="assets/images/about-watchmaker-atelier.jpg" alt="Master horologist working with loupe and precision tweezers at wooden workbench" loading="lazy">
+            <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(11, 14, 20, 0.92); backdrop-filter: blur(10px); padding: 14px 20px; border-radius: var(--radius-sm); border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.8rem; color: var(--color-gold); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;">Manhattan Watch Atelier</span>
+              <span style="font-size: 0.78rem; color: var(--color-text-muted);">SoHo &bull; 181 Mercer St</span>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-amber);">
-          <p style="color: var(--text-light); font-style: italic; margin-bottom: 1.5rem;">
-            "Reserving the mobile watchmaking workshop van for our private estate collection overhaul saved weeks of transport risk. Exemplary service."
+    <!-- Section 6: Verified Horological Benchmarks -->
+    <section class="section" style="background: var(--color-subtle-bg);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Manufacturing Benchmarks</span>
+          <h2>Haute Horology Standards</h2>
+          <p>Independently tested for chronometric rate stability, thermal isochronism, and flawless artisanal anglage finishing.</p>
+        </div>
+        <div class="grid-3">
+          <div style="background: var(--color-card-bg); padding: 36px; border-radius: var(--radius-md); border: 1px solid var(--color-border); text-align: center;">
+            <div style="font-size: 2.8rem; color: var(--color-gold); font-family: var(--font-serif); font-weight: 700; margin-bottom: 8px;">&plusmn;1.0s</div>
+            <h4 style="margin-bottom: 12px;">Daily Rate Precision</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.92rem;">Tested across six positions and three temperatures exceeding COSC chronometer criteria.</p>
+          </div>
+          <div style="background: var(--color-card-bg); padding: 36px; border-radius: var(--radius-md); border: 1px solid var(--color-border); text-align: center;">
+            <div style="font-size: 2.8rem; color: var(--color-gold); font-family: var(--font-serif); font-weight: 700; margin-bottom: 8px;">100%</div>
+            <h4 style="margin-bottom: 12px;">Hand-Beveled Anglage</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.92rem;">Every bridge, lever, and screw sink is hand-chamfered with gentian wood and diamond paste.</p>
+          </div>
+          <div style="background: var(--color-card-bg); padding: 36px; border-radius: var(--radius-md); border: 1px solid var(--color-border); text-align: center;">
+            <div style="font-size: 2.8rem; color: var(--color-gold); font-family: var(--font-serif); font-weight: 700; margin-bottom: 8px;">28,800</div>
+            <h4 style="margin-bottom: 12px;">Vibrations Per Hour</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.92rem;">4Hz high-beat balance cadence for smooth seconds hand glide and superior shock resilience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Manhattan Salon Lookbook -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Manhattan Atelier Salon</span>
+          <h2>The Mercer Street Watchmaking Gallery</h2>
+          <p>Experience quiet consultation suites, live watchmaker workbenches, and private commissioning lounges in SoHo.</p>
+        </div>
+        <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); position: relative;">
+          <img src="assets/images/lookbook-mercer-salon.jpg" alt="Interior of modern luxury watchmaking atelier lounge in Manhattan with leather armchairs and showcases" style="width: 100%; height: 500px; object-fit: cover;">
+          <div style="position: absolute; bottom: 32px; left: 32px; background: rgba(11, 14, 20, 0.92); backdrop-filter: blur(12px); padding: 24px 32px; border-radius: var(--radius-sm); border: 1px solid var(--color-border); max-width: 500px;">
+            <h3 style="font-size: 1.35rem; margin-bottom: 8px; color: var(--color-gold);">The Mercer Watchmaking Suite</h3>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 16px;">Private timepiece commissions, movement assembly viewings, and bespoke horology consultations.</p>
+            <a href="blog.html" class="card-link">Read Horology Treatises &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Connoisseur & Collector Testimonials -->
+    <section class="section" style="background: var(--color-subtle-bg);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Collector Testimonials</span>
+          <h2>Reflections from Discerning Connoisseurs</h2>
+          <p>Independent collectors, horology critics, and master watchmakers on Mechanic Time Ox.</p>
+        </div>
+        <div class="grid-3">
+          <div style="background: var(--color-card-bg); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+            <div style="color: var(--color-gold); margin-bottom: 16px;">★★★★★</div>
+            <p style="color: #F1F5F9; font-style: italic; margin-bottom: 20px;">"The hand-anglage on my Chronomètre Souverain is nothing short of breathtaking. Under a 10x loupe, the interior angles and black polish rival the finest independent masters in Geneva."</p>
+            <strong style="color: var(--color-text-main); font-size: 0.95rem;">Lord Henrik Montgomery</strong>
+            <p style="font-size: 0.8rem; color: var(--color-text-muted);">Horology Collector & Patron, London</p>
+          </div>
+          <div style="background: var(--color-card-bg); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+            <div style="color: var(--color-gold); margin-bottom: 16px;">★★★★★</div>
+            <p style="color: #F1F5F9; font-style: italic; margin-bottom: 20px;">"The co-axial radial escapement maintains incredible rate stability. After six months on the wrist, it has gained less than three seconds total."</p>
+            <strong style="color: var(--color-text-main); font-size: 0.95rem;">Dr. Julian Sterling</strong>
+            <p style="font-size: 0.8rem; color: var(--color-text-muted);">Precision Mechanical Engineer, Zurich</p>
+          </div>
+          <div style="background: var(--color-card-bg); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+            <div style="color: var(--color-gold); margin-bottom: 16px;">★★★★★</div>
+            <p style="color: #F1F5F9; font-style: italic; margin-bottom: 20px;">"The private commissioning session at 181 Mercer Street was an unforgettable experience. Selecting the guilloché pattern directly with the master watchmaker made the piece uniquely mine."</p>
+            <strong style="color: var(--color-text-main); font-size: 0.95rem;">Maximilian Laurent</strong>
+            <p style="font-size: 0.8rem; color: var(--color-text-muted);">Architectural Designer & Horology Patron, New York</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: Private Caliber Commissioning Consultation -->
+    <section class="section">
+      <div class="container container-narrow">
+        <div style="background: radial-gradient(circle at center, rgba(212, 175, 55, 0.2), transparent 70%), var(--color-card-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 60px 48px; text-align: center;">
+          <span class="section-tag">Private Horological Commission</span>
+          <h2 style="font-size: 2.3rem; margin-bottom: 16px;">Commission Your Master Timepiece</h2>
+          <p style="color: var(--color-text-muted); max-width: 560px; margin: 0 auto 32px;">
+            Visit our Manhattan atelier at 181 Mercer Street, New York, NY 10012 to discuss custom movement complications, hand-engraved guilloché motifs, and bespoke precious metal allocations.
           </p>
-          <div style="display: flex; gap: 1rem; align-items: center;">
-            <div style="width: 45px; height: 45px; border-radius: 50%; background: var(--accent-amber); color: #111318; display: flex; align-items: center; justify-content: center; font-weight: 800;">HG</div>
-            <div>
-              <strong style="color: var(--accent-amber); display: block;">Dr. Henri Gautier</strong>
-              <span style="color: var(--text-muted); font-size: 0.85rem;">Industrial Museum Curator</span>
-            </div>
+          <div style="display: flex; gap: 12px; justify-content: center; max-width: 500px; margin: 0 auto 24px; flex-wrap: wrap;">
+            <input type="email" placeholder="Enter your private email" style="flex: 1; min-width: 240px; padding: 14px 18px; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-subtle-bg); color: var(--color-text-main); font-size: 0.95rem;">
+            <a href="contact.html" class="btn-watch btn-gold">Request Allocation</a>
           </div>
-        </div>
-
-        <div style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-amber);">
-          <p style="color: var(--text-light); font-style: italic; margin-bottom: 1.5rem;">
-            "The DLC diamond coating on the Tactical Stealth GMT survived rigorous field tests without a single micro-scratch. Unmatched durability."
-          </p>
-          <div style="display: flex; gap: 1rem; align-items: center;">
-            <div style="width: 45px; height: 45px; border-radius: 50%; background: var(--accent-amber); color: #111318; display: flex; align-items: center; justify-content: center; font-weight: 800;">CS</div>
-            <div>
-              <strong style="color: var(--accent-amber); display: block;">Clara Sinclair</strong>
-              <span style="color: var(--text-muted); font-size: 0.85rem;">Chronometry Guild President</span>
-            </div>
-          </div>
+          <p style="font-size: 0.8rem; color: #64748B;">Direct atelier appointments welcomed at +1-888-777-5845.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- SECTION 7: Industrial Horology Gazette & Chrono Dispatches -->
-  <section class="section" id="gazette">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Chrono Dispatches</span>
-        <h2 class="section-title">Industrial Horology Gazette</h2>
-      </div>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-        <div class="blog-card">
-          <div class="blog-img-wrap">
-            <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?auto=format&fit=crop&w=800&h=600&crop=center&mechanic_slot=27" alt="5-Axis CNC Milling of Grade-5 Titanium Tourbillon Cages">
-          </div>
-          <div class="blog-body">
-            <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">August 24, 2026 • 1,245 Words</span>
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;"><a href="blog/mastering-deadbeat-escapements-and-pendulum-mechanics.html">5-Axis CNC Titanium Micro-Milling</a></h3>
-            <p style="color: var(--text-muted); font-size: 0.9rem; flex-grow: 1;">Micron tolerance machining, carbide tool paths, and titanium tourbillon cages.</p>
-            <a href="blog/mastering-deadbeat-escapements-and-pendulum-mechanics.html" style="color: var(--accent-amber); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; margin-top: 1rem;">Read Masterclass Essay →</a>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-img-wrap">
-            <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&w=800&h=600&crop=bottom&mechanic_slot=28" alt="DLC Plasma Vapor Deposition in Watch Cases">
-          </div>
-          <div class="blog-body">
-            <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">August 20, 2026 • 1,247 Words</span>
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;"><a href="blog/invar-rod-temperature-compensation-in-longcase-clocks.html">DLC Plasma Vapor Deposition</a></h3>
-            <p style="color: var(--text-muted); font-size: 0.9rem; flex-grow: 1;">Vickers 4,500 hardness, carbon lattice bonding, and tactical matte black cases.</p>
-            <a href="blog/invar-rod-temperature-compensation-in-longcase-clocks.html" style="color: var(--accent-amber); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; margin-top: 1rem;">Read Masterclass Essay →</a>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-img-wrap">
-            <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?auto=format&fit=crop&w=800&h=600&crop=entropy&mechanic_slot=29" alt="Column-Wheel Monopusher Chronograph Mechanics">
-          </div>
-          <div class="blog-body">
-            <span style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem;">August 16, 2026 • 1,247 Words</span>
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;"><a href="blog/fusee-barrel-torque-equalization-and-power-reserve.html">Column-Wheel Monopusher Engines</a></h3>
-            <p style="color: var(--text-muted); font-size: 0.9rem; flex-grow: 1;">Tactile pusher response, horizontal friction clutches, and power delivery curves.</p>
-            <a href="blog/fusee-barrel-torque-equalization-and-power-reserve.html" style="color: var(--accent-amber); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; margin-top: 1rem;">Read Masterclass Essay →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 8: VIP Chronometry Circle & 4-Column Footer -->
-  <section class="section" id="pass" style="background: var(--bg-surface); color: var(--text-light);">
-    <div class="container">
-      <div style="text-align: center; max-width: 850px; margin: 0 auto; background: var(--bg-card); padding: 3.5rem 2rem; border-radius: 16px; border: 1px solid var(--border-amber);">
-        <span class="hero-badge">⚙️ VIP CHRONOMETRY CIRCLE PASS</span>
-        <h2 class="font-display" style="color: var(--accent-amber); font-size: 2.5rem; margin-bottom: 1rem;">Join The Industrial Watchmaker Circle</h2>
-        <p style="color: var(--text-muted); margin-bottom: 2rem;">Receive priority invitations for mobile workshop van visits, 3D optical movement scans, and limited industrial timepiece machine drops.</p>
-        <form onsubmit="event.preventDefault(); alert('Thank you! Your VIP chronometry pass request has been logged by MechanicTimeox concierge.'); this.reset();" style="display: flex; gap: 1rem; max-width: 550px; margin: 0 auto; flex-wrap: wrap;">
-          <input type="email" placeholder="Enter your email address" required style="flex: 1; min-width: 250px; padding: 0.85rem 1.25rem; background: var(--bg-dark); border: 1px solid var(--border-amber); color: var(--text-light); border-radius: 4px;">
-          <button type="submit" class="btn-forge btn-amber">Request Pass</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
+  <!-- Site Footer -->
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <a href="index.php" class="brand-logo" style="margin-bottom: 1rem; color: #fff;">Mechanic<span>Timeox</span></a>
-          <p>MechanicTimeox is Soho New York's premier industrial watchmaking atelier dedicated to raw titanium tourbillons, DLC coated chronographs, micro-machining, and mobile watchmaker van visits.</p>
-          <p style="margin-top: 1rem; color: var(--text-muted);">
-            📍 181 Mercer Street, New York, NY 10012, United States<br>
-            📞 +1-888-777-5845
+          <div class="brand-container" style="margin-bottom: 1.2rem;">
+            <div class="brand-logo-icon">🦊</div>
+            <div class="brand-text-wrap">
+              <span class="brand-logo-text"><?php echo $site_name; ?></span>
+              <span class="brand-tagline"><?php echo $site_tagline; ?></span>
+            </div>
+          </div>
+          <p style="font-size: 0.92rem; color: #8A99AD; line-height: 1.8;">
+            Crafting bespoke hand-finished mechanical chronometers, multi-axis tourbillons, and engine-turned guilloché dials in our private Manhattan watchmaking atelier.
           </p>
         </div>
         <div class="footer-col">
           <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="blog.html">Chrono Journal</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+          <ul class="footer-links">
+            <li><a href="index.php">Main</a></li>
+            <li><a href="about.html">Manufacture</a></li>
+            <li><a href="blog.html">Horology Journal</a></li>
+            <li><a href="contact.html">Commission</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Legal Policies</h4>
-          <ul>
+          <h4>Legal & Policies</h4>
+          <ul class="footer-links">
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
             <li><a href="cookies.html">Cookie Policy</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="disclaimer.html">Horological Disclaimer</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Atelier Focus</h4>
-          <p>Curating 5-axis CNC titanium milling, DLC diamond coatings, and mobile watchmaker workshop vans for horology collectors globally.</p>
+          <h4>Manhattan Atelier</h4>
+          <div class="footer-contact-item"><span class="icon">📍</span><span><?php echo $official_address; ?></span></div>
+          <div class="footer-contact-item"><span class="icon">📞</span><span><?php echo $official_phone; ?></span></div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 MechanicTimeox Studio. All rights reserved. Registered Official Headquarters.</p>
-        <p>Designed for Industrial Mechanical Chronometry & Micro-Engineering.</p>
+        <div>&copy; <?php echo date('Y'); ?> <?php echo $site_name; ?>. All Rights Reserved.</div>
+        <div>Haute Horology &bull; Master Mechanical Chronometry &bull; Hand Anglage Finishing</div>
       </div>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
